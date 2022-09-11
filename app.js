@@ -4,7 +4,7 @@ const botNode = require("./index");
 const { gameOptions } = require("./options");
 require("dotenv").config();
 const TelegramApi = require("node-telegram-bot-api");
-const token = "5332716429:AAE0tyNY-ANX-IDYWqusXc-APqrnCh9AY2A";
+const token = process.env.TOKEN;
 const validate = require("validate-edrpou");
 
 const logger = require("morgan");
